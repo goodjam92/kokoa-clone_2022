@@ -35,9 +35,20 @@
       </p>
     </header>
 
-    <form id="login-form">
-      <input type="text" placeholder="Email or phone number" />
-      <input type="text" placeholder="Password" />
+    <!-- form (action, method)
+    action = 어떤 페이지로 data를 보낼지 지정함.
+    method = 2가지 방식 POST or GET 으로 사용할 수 있다
+             POST-백엔드 서버에 정보를 전송하는 방식
+             GET- URL에 포함되어도 상관없는 정보들을 전송, 보안에 취약함(Id, Password 등의 정보 전송으로 사용하지 않음)
+    -->
+    <form action="friends.html" method="get" id="login-form">
+      <input
+        name="username"
+        required
+        type="text"
+        placeholder="Email or phone number"
+      />
+      <input name="password" required type="text" placeholder="Password" />
       <input type="submit" value="Log in" />
       <a href="*">Find kokoa Account or Password</a>
     </form>
