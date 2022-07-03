@@ -1,9 +1,8 @@
 .screen-header{
     display:flex;
     justify-content: space-between;
-    padding:50px 15px var(--horizontal-space) var(--horizontal-space);
+    padding:30px 15px var(--horizontal-space) var(--horizontal-space);
     align-items: center;
-    
 }
 
 .screen-header__title{
@@ -21,6 +20,6 @@
 
 .screen-header__icons__check {
     position: absolute;
-    left: 92px;
+    right: -3px;
     bottom: 18px;
 }
